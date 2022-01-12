@@ -5,11 +5,25 @@ const Header = () => {
   return (
     <div className="header-container">
       <div>
-        <Link to="/">Ecommers</Link>
+        <Link
+          to="/"
+          style={{
+            color: "white",
+            textDecoration: "none",
+            fontSize: "21px",
+          }}
+        >
+          Ecommers
+        </Link>
       </div>
 
       <div>
-        <Link to="/cart">Cart </Link>
+        <Link
+          to="cart"
+          style={{ color: "white", textDecoration: "none", fontSize: "18px" }}
+        >
+          Cart{" "}
+        </Link>
       </div>
     </div>
   );

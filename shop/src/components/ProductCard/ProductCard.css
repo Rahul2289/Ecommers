@@ -15,4 +15,5 @@
 .Product-item:hover {
   transform: scale(1.01);
   transition: all 0.3s;
+  overflow: hidden;
 }
