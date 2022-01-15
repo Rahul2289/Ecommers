@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import React, { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
 import { useDispatch, useSelector } from "react-redux";
 import "./productDetail.css";
@@ -8,6 +8,8 @@ import {
 } from "./../../features/ProductDetailsSlice";
 import Loading from "./../Loading/Loading";
 import { removeSelectedProductDetails } from "../../features/ProductDetailsSlice";
+import QuantityBtn from "./../QuantityBtn/QuantityBtn";
+import { addItemsToCart } from "../../features/cartSlice";
 const ProductDetails = () => {
   const { id } = useParams();
   const dispatch = useDispatch();
@@ -18,11 +20,17 @@ const ProductDetails = () => {
       dispatch(removeSelectedProductDetails());
     };
   }, [dispatch, id]);
+  const [count, setCount] = useState(1);
+  const handleAddToCart = () => {
+    dispatch(addItemsToCart(data));
+  };
 
   return (
     <>
       {Object.keys(data).length === 0 ? (
-        <Loading />
+        <div>
+          <Loading />
+        </div>
       ) : (
         <div className="product-detail-container">
           <div className="Left-side">
@@ -44,19 +52,24 @@ const ProductDetails = () => {
               </h3>
               <h4 style={{ fontSize: "14px", padding: "10px" }}>
                 {" "}
-                Rating {data.rating.rate}
+                {/* Rating {data.rating.rate} */}
               </h4>
               <p style={{ fontSize: "15px", padding: "10px" }}>
                 {data.description}
               </p>
             </div>
-            <div className="btn-container2">
-              <button className="button2">-</button>
-              <p>0</p>
-              <button className="button2">+</button>
+            <div>
+              <QuantityBtn count={count} setCount={setCount} />
             </div>
             <div className="btn-container1">
-              <button className="button">Add to Cart</button>
+              <button
+                className="button"
+                onClick={() => {
+                  handleAddToCart(data);
+                }}
+              >
+                Add to Cart
+              </button>
             </div>
           </div>
         </div>

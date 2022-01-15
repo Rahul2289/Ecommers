@@ -1,13 +1,15 @@
 .slider-container {
   width: 100%;
-  height: 150px;
+  height: 280px;
+  margin-top: 5px;
 }
 .Slider {
   position: relative;
   width: 100%;
-  height: 200px;
-  background-color: #f1efeb;
-  margin-top: 4px;
+  height: 300px;
+
+  background: #ffffff;
+
   text-align: center;
   align-items: center;
   justify-content: center;

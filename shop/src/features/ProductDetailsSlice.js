@@ -15,9 +15,9 @@ const initialState = {
 const detailsSlice = createSlice({
   name: "details",
   initialState,
-  reducer: {
+  reducers: {
     removeSelectedProductDetails: (state) => {
-      state.details = {};
+      state.details = initialState;
     },
   },
   extraReducers: {

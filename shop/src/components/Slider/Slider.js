@@ -5,7 +5,7 @@ import Slider from "react-slick";
 
 const SliderC = () => {
   const settings = {
-    dots: true,
+    dots: false,
     infinite: true,
     speed: 500,
     slidesToShow: 1,
@@ -15,13 +15,25 @@ const SliderC = () => {
     <div className="Slider">
       <Slider {...settings}>
         <div className="slider-container">
-          <h1>slider1</h1>
+          <img
+            style={{ width: "100%", height: "100%" }}
+            src="https://www.softwarecreatives.com/assets/images/ibg/in-img-5.jpg"
+            alt=""
+          ></img>
         </div>
         <div className="slider-container">
-          <h1>slider2</h1>
+          <img
+            style={{ width: "100%", height: "100%" }}
+            src="https://www.webdreams.in/img/slider/ecommerce.jpg"
+            alt=""
+          ></img>
         </div>
         <div className="slider-container">
-          <h1>slider3</h1>
+          <img
+            style={{ width: "100%", height: "100%" }}
+            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSK51WBsW1OUeZeiyDgL2b7L_ab-yx1aF5u9KzGK51Qol1gVg1l-8SyVgFb5f9qrzv7cqQ&usqp=CAU"
+            alt=""
+          ></img>
         </div>
       </Slider>
     </div>

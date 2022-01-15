@@ -8,3 +8,15 @@
   justify-content: space-between;
   width: 100%;
 }
+.cart-icon {
+  font-size: 25px;
+}
+
+/* .right-sides {
+  align-items: center;
+  justify-content: space-between;
+  display: flex;
+}
+.right-sides > div {
+  margin-left: 25px;
+} */

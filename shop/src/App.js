@@ -5,9 +5,10 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Home from "./components/Home/Home";
 import Cart from "./components/Cart/Cart";
 import ProductDetails from "./components/ProductDetails/ProductDetails";
+
 function App() {
   return (
-    <div>
+    <div className="">
       <BrowserRouter>
         <Header />
         <Routes>
