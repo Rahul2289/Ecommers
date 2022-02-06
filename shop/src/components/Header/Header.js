@@ -8,9 +8,6 @@ import { useSelector } from "react-redux";
 
 const Header = () => {
   const data = useSelector(getAllCartItems);
-  console.log(data.length);
-
-  console.log(data.length);
   return (
     <div className="header-container">
       <div className="left-sides">

@@ -13,7 +13,7 @@ const ProductCard = ({ data }) => {
             <img className="img" src={data.image} alt={data.title} />
           </div>
           <div className="Product-bottom">
-            <div className="info" style={{ overFlow: "hidden" }}>
+            <div className="info">
               <h4 className="title">{data.title}</h4>
             </div>
           </div>

@@ -26,13 +26,8 @@ const categorySlice = createSlice({
     [fetchAsyncCategory.rejected]: () => {
       console.log("Rejected!");
     },
-    // [fetchAsyncProductsCategory.fulfilled]: (state, { payload }) => {
-    //   console.log("Fetched Successfully!");
-    //   return { ...state, category: payload };
-    // },
   },
 });
 
 export const getAllCategory = (state) => state.categories.categories;
-// export const getAllCategory = (state) => state.products.category;
 export default categorySlice.reducer;

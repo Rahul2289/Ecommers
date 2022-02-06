@@ -11,9 +11,11 @@
   transition: all 0.3s;
   margin: auto;
   cursor: pointer;
+  overflow: hidden;
+  margin-bottom: 10px;
 }
 .Product-item:hover {
-  transform: scale(1.01);
+  transform: scale(1.03);
   transition: all 0.3s;
   overflow: hidden;
 }

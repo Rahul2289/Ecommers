@@ -1,5 +1,12 @@
 .Cart-Container {
   padding: 2rem 4rem;
+  background: rgb(247, 233, 233);
+  background: linear-gradient(
+    90deg,
+    rgba(247, 233, 233, 1) 0%,
+    rgba(241, 207, 207, 1) 32%,
+    rgba(227, 182, 182, 0.9920343137254902) 69%
+  );
 }
 .Cart-Container h2 {
   font-weight: 400;

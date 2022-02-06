@@ -8,9 +8,17 @@
   align-items: center;
   display: flex;
   justify-content: center;
+  background: rgb(247, 233, 233);
+  cursor: pointer;
 }
 .right-side {
-  background-color: #f6f6f6;
+  background: rgb(247, 233, 233);
+  background: linear-gradient(
+    90deg,
+    rgba(247, 233, 233, 1) 0%,
+    rgba(241, 207, 207, 1) 32%,
+    rgba(227, 182, 182, 0.9920343137254902) 69%
+  );
   flex: 1.5;
 }
 .img-details {
@@ -34,6 +42,7 @@
   width: 150px;
   height: 50px;
   font-size: 16px;
+  cursor: pointer;
 }
 .button:hover {
   background-color: white;
