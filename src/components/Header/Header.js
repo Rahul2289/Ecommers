@@ -12,7 +12,7 @@ const Header = () => {
     <div className="header-container">
       <div className="left-sides">
         <Link
-          to="/"
+          to="/Ecommers"
           style={{
             color: "white",
             textDecoration: "none",
